@@ -1,0 +1,158 @@
+@font-face {
+    font-family: DaysOne;
+    src: url(fonts/DaysOne-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    width: 100%;
+    max-width: 120rem;
+    height: auto;
+    max-height: 48.2rem;
+    background: url(image/banner/banner2.png) 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+.banner2 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.image_banner {
+    max-width: 120rem;
+    max-height: 48.2rem;
+    width: 100%;
+    height: auto;
+}
+.container {
+   width: 100%;
+   
+   max-width: 120rem;
+   height: 75rem;
+   background: url(image/fon_block.png) 100% 100%;
+   background-size: cover;
+   background-position: center;
+   
+}
+.text-container {
+    position: relative;
+    margin: 0 auto;
+    width: 86%;
+    max-width: 74.3rem;
+    height: auto;
+    max-height: 45.8rem;
+    padding-top: 5.75rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+.text-container-block {
+    background-color: rgba(255, 255, 255, 0); 
+}
+.image-text {
+    position: absolute;
+    top: 12.7rem;
+    
+    width: 30rem;
+    height: 15rem;
+    z-index: 1;
+}
+.map_text {
+    position: absolute;
+    left: 48rem;
+    top: 20rem;
+    width: 22rem;
+    height: 10rem;
+}
+h1 {
+    width: 52rem;
+    font-family: DaysOne;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+.description {
+
+ font-family: Montserrat;
+ font-size: 1.25rem;
+ background-color: rgba(255, 255, 255, 0.8);
+ border-left: 2px solid grey;
+ border-top: 1px solid #FFB75E;
+ border-right: 1px solid #FFB75E;
+ border-bottom:1px solid #FFB75E;
+ text-align: center;
+ display: table-cell;
+ vertical-align: middle;
+}
+.one {
+    position: absolute;
+    left: 19rem;
+    top: 17rem;
+    z-index: 2;
+    width: 26rem;
+    height: 13rem;
+   
+}
+.two {
+    position: absolute;
+    width: 26rem;
+    height: 10rem;
+    left: 40rem;
+    top: 25rem;
+    z-index: 3;
+}
+.three {
+    position: absolute;
+    width: 38.4rem;
+    height: 15.3rem;
+    top: 32rem;
+    
+}
+.house_block{
+    display: flex;
+    justify-content: space-between;
+    height: 306px;
+    position: relative;
+    top: 45rem;
+    background: 
+    url(image/sun.png) center right/ 30rem 54rem no-repeat, 
+    url(image/forrest.png) center left/70rem 15rem no-repeat;
+}
+h2 {
+    font-family: DaysOne;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 7rem;
+    width: 39rem;
+}
+.description_territory{
+    display: flex;
+    padding-left: 7rem;
+}
+
+.house-image {
+   
+    width: 20rem;
+    height: 20rem;
+}
+.ticker-one, .ticker-two {
+    display: flex;
+    font-family: DaysOne;
+    font-size: 1.7rem;
+    color: white;
+    overflow: hidden;
+}
+.ticker-one {
+    background: #FFB75E;
+}
+.ticker-two {
+    background: #FFCB46;
+}

@@ -10,33 +10,27 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    
 }
-.banner {
+.wrapper {
     width: 100%;
-    max-width: 120rem;
-    height: auto;
-    max-height: 48.2rem;
-    background: url(image/banner/banner2.png) 100% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer;
+    min-width: 20rem;
+    max-width: 160rem;
+    overflow: hidden;
 }
+
 .banner2 {
     width: 100%;
     height: auto;
     padding: 0;
 }
 .image_banner {
-    max-width: 120rem;
-    max-height: 48.2rem;
+   
     width: 100%;
     height: auto;
 }
 .container {
    width: 100%;
-   
-   max-width: 120rem;
    height: 75rem;
    background: url(image/fon_block.png) 100% 100%;
    background-size: cover;
@@ -117,12 +111,13 @@ h1 {
 .house_block{
     display: flex;
     justify-content: space-between;
-    height: 306px;
+   
     position: relative;
     top: 45rem;
     background: 
-    url(image/sun.png) center right/ 30rem 54rem no-repeat, 
+    url(image/sun.png) center right/ 30rem 74rem no-repeat, 
     url(image/forrest.png) center left/70rem 15rem no-repeat;
+  
 }
 h2 {
     font-family: DaysOne;
@@ -130,29 +125,150 @@ h2 {
     text-transform: uppercase;
     color: white;
     padding-top: 3rem;
-    padding-left: 7rem;
-    width: 39rem;
+    padding-left: 2rem;
+    
 }
 .description_territory{
     display: flex;
     padding-left: 7rem;
 }
+.description_territory > div {
+    
+    border-left: 2px solid #FFB75E;
+}
+.description_territory > div:nth-child(2){
+    width: 15rem;
+    border-right: 2px solid #FFB75E;
+}
+
+.description_territory > div > p {
+    font-size: 3rem;
+    font-family: Montserrat;
+    color: #FFB75E;
+    margin: 0 2rem;
+    text-align: center;
+}
+.span-territory {
+    color: white;
+    font-size: 2.5rem;
+}
+.span_description {
+    color: white;
+    font-size: 1.12rem;
+    display: table-cell;
+ vertical-align: middle;
+}
 
 .house-image {
    
-    width: 20rem;
+    width: 25rem;
     height: 20rem;
 }
 .ticker-one, .ticker-two {
-    display: flex;
+    
     font-family: DaysOne;
     font-size: 1.7rem;
+    
     color: white;
     overflow: hidden;
+    
+    
 }
+.animation_ticker {
+    display: flex;
+    animation: marquee 15s infinite linear;
+    
+    white-space: nowrap;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 .ticker-one {
     background: #FFB75E;
+    margin-top: 3rem;
+    
 }
 .ticker-two {
     background: #FFCB46;
+}
+.ticker-one > div > p,.ticker-two > div > p {
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width : 768px){
+    *{
+        font-size: 10px;
+    }
+    .one {
+        left : 19rem;;
+    }
+    .map_text {
+        left: 0;
+    top: 50rem;
+    }
+    .two {
+        left: 10rem;
+        top: 55rem;
+    }
+    .house_block {
+        top: 55rem;
+        
+    }
+    .ticker-one {
+        margin-top: 10rem;
+    }
+}
+
+@media(min-width : 2120px){
+    *{
+        font-size: 30px;
+    }
+}
+
+@media(max-width : 1024px){
+    *{
+        font-size: 12px;
+    }
+}
+@media(max-width : 426px){
+    *{
+        font-size: 8px;
+    }
+    .image_banner {
+        height: 35rem;
+    }
+    .one {
+        left : 10rem;;
+    }
+    .map_text {
+        left: 0;
+        top: 50rem;
+    }
+    .two {
+        left: 10rem;
+        top: 55rem;
+    }
+    .house-image-block {
+        display: none;
+    }
+    .house_block {
+        top: 55rem;
+        background: url(image/forrest.png);
+    }
+    .ticker-one {
+        margin-top: 10rem;
+    }
+    .description_territory {
+        padding-left: 0;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
 }

@@ -6,32 +6,32 @@
     font-family: Montserrat;
     src: url(fonts/Montserrat-Regular.ttf);
 }
+html {
+    font-size:  calc(1vw / 14.4);
+}
 body {
-    font-size: 16px;
     margin: 0;
     padding: 0;
-    
+    overflow-x:hidden;
 }
 .wrapper {
-    width: 100%;
-    min-width: 20rem;
-    max-width: 160rem;
+    font-size: 16rem;
+    width: 1440rem;
     overflow: hidden;
 }
 
 .banner2 {
-    width: 100%;
+    width: 1440rem;
     height: auto;
     padding: 0;
 }
 .image_banner {
-   
-    width: 100%;
+    width: 1440rem;
     height: auto;
 }
 .container {
-   width: 100%;
-   height: 75rem;
+   width: 1440rem;
+   height: 1200rem;
    background: url(image/fon_block.png) 100% 100%;
    background-size: cover;
    background-position: center;
@@ -40,41 +40,38 @@ body {
 .text-container {
     position: relative;
     margin: 0 auto;
-    width: 86%;
-    max-width: 74.3rem;
+    width: 1200rem;
     height: auto;
-    max-height: 45.8rem;
-    padding-top: 5.75rem;
+    padding-top: 92rem;
     background-color: rgba(255, 255, 255, 0);
 }
 .text-container-block {
     background-color: rgba(255, 255, 255, 0); 
+    width: 1200rem;
 }
 .image-text {
     position: absolute;
-    top: 12.7rem;
-    
-    width: 30rem;
-    height: 15rem;
+    top: 203.2rem;
+    width: 480rem;
+    height: 240rem;
     z-index: 1;
 }
 .map_text {
     position: absolute;
-    left: 48rem;
-    top: 20rem;
-    width: 22rem;
-    height: 10rem;
+    left: 768rem;
+    top: 320rem;
+    width: 352rem;
+    height: 160rem;
 }
 h1 {
-    width: 52rem;
+    width: 832rem;
     font-family: DaysOne;
-    font-size: 1.75rem;
+    font-size: 28rem;
     text-transform: uppercase;
 }
 .description {
-
  font-family: Montserrat;
- font-size: 1.25rem;
+ font-size: 20rem;
  background-color: rgba(255, 255, 255, 0.8);
  border-left: 2px solid grey;
  border-top: 1px solid #FFB75E;
@@ -86,94 +83,90 @@ h1 {
 }
 .one {
     position: absolute;
-    left: 19rem;
-    top: 17rem;
+    left: 304rem;
+    top: 272rem;
     z-index: 2;
-    width: 26rem;
-    height: 13rem;
+    width: 416rem;
+    height: 208rem;
    
 }
 .two {
     position: absolute;
-    width: 26rem;
-    height: 10rem;
-    left: 40rem;
-    top: 25rem;
+    width: 416rem;
+    height: 160rem;
+    left: 640rem;
+    top: 400rem;
     z-index: 3;
 }
 .three {
     position: absolute;
-    width: 38.4rem;
-    height: 15.3rem;
-    top: 32rem;
+    width: 614.4rem;
+    height: 244.3rem;
+    top: 512rem;
     
 }
 .house_block{
     display: flex;
     justify-content: space-between;
-   
+    align-items: center;
     position: relative;
-    top: 45rem;
+    top: 640rem;
+    height: 480rem;
     background: 
-    url(image/sun.png) center right/ 30rem 74rem no-repeat, 
-    url(image/forrest.png) center left/70rem 15rem no-repeat;
-  
+    url(image/forrest.png) center left/1250rem 240rem no-repeat,
+    url(image/sun3.png) center right/ 700rem 448rem no-repeat;
 }
 h2 {
     font-family: DaysOne;
-    font-size: 1.3rem;
+    font-size: 20.8rem;
     text-transform: uppercase;
     color: white;
-    padding-top: 3rem;
-    padding-left: 2rem;
-    
+    padding-left: 32rem;
 }
 .description_territory{
     display: flex;
-    padding-left: 7rem;
+    padding-left: 112rem;
 }
 .description_territory > div {
     
     border-left: 2px solid #FFB75E;
 }
 .description_territory > div:nth-child(2){
-    width: 15rem;
+    width: 240rem;
     border-right: 2px solid #FFB75E;
 }
 
 .description_territory > div > p {
-    font-size: 3rem;
+    font-size: 48rem;
     font-family: Montserrat;
     color: #FFB75E;
-    margin: 0 2rem;
+    margin: 0 32rem;
     text-align: center;
 }
 .span-territory {
     color: white;
-    font-size: 2.5rem;
+    font-size: 40rem;
 }
 .span_description {
     color: white;
-    font-size: 1.12rem;
+    font-size: 17.92rem;
     display: table-cell;
  vertical-align: middle;
 }
 
 .house-image {
    
-    width: 25rem;
-    height: 20rem;
+    width: 400rem;
+    height: 320rem;
 }
 .ticker-one, .ticker-two {
     
     font-family: DaysOne;
-    font-size: 1.7rem;
-    
+    font-size: 27.2rem;
     color: white;
     overflow: hidden;
-    
-    
-}
+    text-transform: uppercase;
+    }
 .animation_ticker {
     display: flex;
     animation: marquee 15s infinite linear;
@@ -191,84 +184,104 @@ h2 {
 
 .ticker-one {
     background: #FFB75E;
-    margin-top: 3rem;
+    margin-top: 48rem;
     
 }
 .ticker-two {
     background: #FFCB46;
 }
 .ticker-one > div > p,.ticker-two > div > p {
-    margin-right: 2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-right: 32rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
-@media(max-width : 768px){
-    *{
-        font-size: 10px;
+@media screen and (max-width: 480px) {
+    html {font-size: calc(1vw / 3.2)}
+    .wrapper, .banner2, .image_banner, .container {
+        width: 320rem;
+        max-width: 480rem;
     }
-    .one {
-        left : 19rem;;
+    .text-container, .text-container-block {
+        width: 300rem;
+        max-width: 460rem;
+    } 
+    .text-container {
+        padding-top: 76rem;
+    }
+
+    h1 {
+        max-width: 345rem;
+        font-size: 16rem;
+    }
+     
+    .image-text {
+        width: 280rem;
+        height: 149rem;
     }
     .map_text {
+        width: 280rem;
+        height: 149rem;
         left: 0;
-    top: 50rem;
+        top: 770rem;
     }
-    .two {
-        left: 10rem;
-        top: 55rem;
-    }
-    .house_block {
-        top: 55rem;
+
+    .description {
+        font-size: 15rem;
         
-    }
-    .ticker-one {
-        margin-top: 10rem;
-    }
-}
+    } 
 
-@media(min-width : 2120px){
-    *{
-        font-size: 30px;
-    }
-}
-
-@media(max-width : 1024px){
-    *{
-        font-size: 12px;
-    }
-}
-@media(max-width : 426px){
-    *{
-        font-size: 8px;
-    }
-    .image_banner {
-        height: 35rem;
-    }
     .one {
-        left : 10rem;;
+        left : 30rem;
+        width: 265rem;
+        height: 123rem;
     }
-    .map_text {
-        left: 0;
-        top: 50rem;
-    }
+  
     .two {
-        left: 10rem;
-        top: 55rem;
+        left: 30rem;
+        top: 830rem;
+        width: 265rem;
+        height: 123rem;
+    }
+    .three {
+        width: 300rem;
+        top: 470rem;
     }
     .house-image-block {
         display: none;
     }
     .house_block {
-        top: 55rem;
-        background: url(image/forrest.png);
+        width: 320rem;
+        max-width: 380rem;
+        height: auto;
+        top: 880rem;
+        background: url(image/forrest.png) left / 100% 100%;
+        background-size: cover;
+    }
+    h2 {
+        font-size: 16rem;
+        padding-left: 0;
     }
     .ticker-one {
-        margin-top: 10rem;
+        margin-top: 50rem;
+    }
+    .ticker-one, .ticker-two {
+        font-size: 12rem;
     }
     .description_territory {
         padding-left: 0;
         justify-content: center;
-        padding-bottom: 1rem;
+        
     }
-}
+     
+    .description_territory > div > p {
+        font-size: 40rem;
+        margin: 0 15rem;
+    }
+    .span-territory {
+        font-size: 17rem;
+    }
+    .description_territory > div:nth-child(2){
+        width: auto;
+    }
+  }
